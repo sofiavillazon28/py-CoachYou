@@ -1,3 +1,43 @@
-.textfield{
-    min-height: 3.5rem;
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    border: none;
+    outline: none;
 }
+
+select{
+    color:var(--grey-dark2-theme-color);
+}
+
+.textfield-icon{
+    width: 100%;
+    position: relative;
+    display: inline;
+    padding-left: 45px;
+    padding-bottom: 16px;
+    padding-top: 15px;
+    background-color: var(--grey-light-theme-color);
+    font-family: var(--secondary-font-family);
+}
+
+.textfield-icon img {
+    position: absolute;
+    left: 20px;
+    top: 18px;
+    width: 20px;
+}
+
+.textfield{
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    display: inline;
+    height: 56px;
+}
+
+.textfield::placeholder{ 
+    color: #919EAB;
+    opacity: 1; 
+}
+

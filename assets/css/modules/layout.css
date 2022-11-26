@@ -12,3 +12,8 @@
 .f-elements{
     display: flex;
 }
+
+.f-elements-center{
+    align-items: center;
+    justify-content: center;
+}

@@ -9,7 +9,7 @@
     --grey-light-theme-color: #EEF5FA;
     --grey-main-theme-color: #919EAB;
     --grey-dark-theme-color: #637381;
-    --grey-dark22-theme-color: #212B36;
+    --grey-dark2-theme-color: #212B36;
     
     /* COLOR SHADOW*/
     --primary-shadow-color: rgba(145, 158, 171, 0.10);
@@ -34,6 +34,8 @@
     --padding-section: 1.5rem;
     --padding-container: 1rem;
     --primary-border-radius: 0.5rem;
+
+    --border-radius-medium: 8px
   }
 
   
