@@ -7,3 +7,16 @@
 @import './modules/card.css';
 @import './modules/buttons.css';
 @import './modules/typography.css';
+@import './modules/hero.css';
+@import './modules/search.css';
+
+.body {
+  /* background-color: var(--primary-theme-color); */
+  color: var(--primary-text-color);
+  font-family: var(--primary-font-family);
+  margin: 0;
+}
+
+.main {
+  overflow: hidden;
+}

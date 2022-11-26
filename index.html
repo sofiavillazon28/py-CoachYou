@@ -1,27 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CouchYou</title>
-    <link rel="stylesheet" href="./assets/css/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CouchYou</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body">
 
-    <h1 class="text-grey">H1 - Texto prueba</h1>
-    <h2 class="text-grey">H2 - Texto prueba</h2>
-    <h3 class="text-grey">H3 - Texto prueba</h3>
-    <h4 class="text-grey">H4 - Texto prueba</h4>
-    <h5 class="text-grey">H5 - Texto prueba</h5>
-    <p class="p1 text-grey">P1- Texto prueba</p>
-    <p class="p2 text-grey">P2- Texto prueba</p>
-    <p class="p3 text-grey">P3- Texto prueba</p>
-    <p class="caption text-grey">caption - Texto prueba</p>
-    
+  <header class="header">
+    <nav id="header-nav" class="nav">
+      <div class="container flex justify-between items-center p-relative">
+        <div class="flex gap-xl">
+          <a href="#hero">
+            <img src="./assets/images/logo/logo-1.svg" alt="" class="nav__logo" width="114" height="39" />
+          </a>
+          <ul class="list flex items-center gap-xl">
+            <li>
+              <a class="list__link p2" href="">Home</a>
+            </li>
+            <li>
+              <a class="list__link p2" href="">Especialidad</a>
+            </li>
+          </ul>
+        </div>
+        <div class="list flex items-center gap-md">
+          <img src="./assets/images/icons/search.svg" alt="">
+          <span class="divider-line"></span>
+          <a class="list__link p3" href="#">Login</a>
+          <button>join Us</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <article class="hero flex items-center">
+      <div class="container flex">
+        <div class="flex flex-column justify-center self-center">
+          <h1 class="text-white m-0 p-0">
+            Crece y aprende con nuestros <span class="text-secondary">couch</span>
+          </h1>
+          <p class="p1 text-grey">Reserva tus sesiones de mentoría uno a uno.</p>
+          <div class="search">
+            <input class="search-field" type="text" placeholder="¿Qué couch buscas?">
+            <select class="search-field" placeholder="País"></select>
+            <select class="search-field" placeholder="Especialidad"></select>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/images/images/imgHero.svg" width="485" height="582" alt="">
+        </div>
+        
+      </div>
+    </article>
+  </main>
+
+  <h1 class="text-grey">H1 - Texto prueba</h1>
+  <h2 class="text-grey">H2 - Texto prueba</h2>
+  <h3 class="text-grey">H3 - Texto prueba</h3>
+  <h4 class="text-grey">H4 - Texto prueba</h4>
+  <h5 class="text-grey">H5 - Texto prueba</h5>
+  <p class="p1 text-grey">P1- Texto prueba</p>
+  <p class="p2 text-grey">P2- Texto prueba</p>
+  <p class="p3 text-grey">P3- Texto prueba</p>
+  <p class="caption text-grey">caption - Texto prueba</p>
+
 </body>
 </html>
