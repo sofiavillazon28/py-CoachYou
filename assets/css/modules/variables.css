@@ -1,0 +1,39 @@
+:root {
+    scroll-behavior: smooth;
+
+    /* COLOR */
+    --primary-theme-color: #131D31;
+    --secondary-theme-color: #FA541C;
+    --alternate-theme-color: #2FBCD1;
+    
+    --alternate-theme-color: #EEF5FA;
+    --alternate-theme-color: #919EAB;
+    --alternate-theme-color: #637381;
+    --alternate-theme-color: #212B36;
+    
+    /* COLOR SHADOW*/
+    --primary-shadow-color: rgba(145, 158, 171, 0.10);
+    
+    /* COLOR PAPER*/
+    --primary-paper-color: #FFFFFF;
+    --primary-paper-color: #EEF5FA;
+    
+    /* TYPOGRPHY COLOR */
+    --primary-text-color: #212B36;
+    --secondary-text-color: #FA541C;
+    --alternate-text-color: #2FBCD1;
+    --grey-text-color: #919EAB;
+    --white-text-color: #FFFFFF;
+    
+    /* FONTS */
+    --primary-font-family: 'Barlow', monospace;
+    --secondary-font-family: 'Poppins', monospace;
+    
+    /* OTHERS */
+    --max-width-container: 1024px;
+    --padding-section: 1.5rem;
+    --padding-container: 1rem;
+    --primary-border-radius: 0.5rem;
+  }
+
+  
