@@ -14,8 +14,10 @@
 }
 .section-cards{
     background-color: var(--secondary-paper-color);
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .f-elements{
@@ -53,8 +55,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
-  }
+
+    .section-cards {
+        background-color: var(--secondary-paper-color);
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
 
 .space-between{
     justify-content: space-between;
