@@ -11,6 +11,8 @@
 
 .square-button{
     padding: 16px;  
+    height: 56px;
+    width: 56px;
 }
 
 .button-secondary{

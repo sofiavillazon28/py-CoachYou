@@ -1,0 +1,46 @@
+.card{
+    background-color: var(--primary-paper-color);
+    border-radius: var(--border-radius-large);
+    overflow: hidden;
+    box-shadow: -8px 8px 24px -4px rgba(145, 158, 171, 0.1);
+}
+
+.card__image{
+    width: 100%;
+    overflow: hidden;
+}
+.card__image img{
+    width: 100%;
+}
+
+.card:hover .card__image img{
+    
+}
+
+.card:hover {
+    animation: zoom 0.5s ease-in-out 0s infinite alternate;
+    box-shadow: -8px 8px 24px -4px rgba(145, 158, 171, 0.3);
+}
+
+.card__content-title{
+    padding: 16px 24px 0px 24px;
+}
+
+.card__content-row{
+    padding: 0px 24px 16px 24px ;
+    width: 100%;
+}
+
+.card__content-column{
+    width: 50%;
+}
+
+.divider-dotted{
+    width: 100%;
+    height: 1px;
+    margin: 16px 0px;
+    border-top: 1px dashed rgba(145, 158, 171, 0.24);
+}
+.card__content-image{
+    width: 20px;
+}

@@ -35,7 +35,8 @@
     --padding-container: 1rem;
     --primary-border-radius: 0.5rem;
 
-    --border-radius-medium: 8px
+    --border-radius-medium: 8px;
+    --border-radius-large: 16px
   }
 
   

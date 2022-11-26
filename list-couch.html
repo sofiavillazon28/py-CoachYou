@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>List</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="/assets/css/index.css">
 </head>
+
 <body>
     <header></header>
     <main>
-        <section class="section section-filter">
-            <form action="f-elements">
+        <section class="section section-filter ">
+            <form class="container f-elements f-elements--center gap-sm">
 
                 <div class="textfield-icon">
                     <img src="./assets/images/icons/search-1.svg" alt="iconTextfield">
                     <input class="textfield" type="text" name="" placeholder="¿Qué couch buscas?">
                 </div>
-                
-                
+
+
                 <div class="textfield-icon">
                     <img src="./assets/images/icons/inventory_management.svg" alt="iconTextfield">
-                    
+
                     <select class="textfield" name="" id="" placeholder="Especialdidad">
                         <option value="1c">Content Writing</option>
                         <option value="2c">Data science</option>
@@ -51,33 +55,277 @@
             </form>
         </section>
         <section class="section section-cards">
-            <div class="">
-                <article class="">
-                    <img src="./assets/images/images/IMG.jpg" alt="">
-                    <button class="button button-secondary">Inicia tu suscripcion</button>
-                    <button class="button button-primary">Inicia tu suscripcion</button>
-                    <h5 class="text-primary">Mathew Smith</h5>
-                    <p class="p3 text-alternate">Product Designer & Design research</p>
-                    <img src="./assets/images/icons/pin.svg" alt="pin">
+            <div class="container g-elements gap-md">
+                <!-- card01 -->
+                <article class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/images/IMG.jpg" alt="">
+                    </div>
 
-                    <p class="p3 text-grey">New York</p>
-                    <img src="./assets/images/icons/increase_level.svg" alt="increase">
+                    <div class="card__content">
+                        
+                        <div class="card__content-title">
+                            <h5 class="text-primary">Mathew Smith</h5>
+                            <p class="p3 text-alternate">Product Designer & Design research</p>
+                            <div class="f-elements gap-xs">
+                                <img class="card__content-image" src="./assets/images/icons/pin.svg" alt="pin">
+                                <p class="p3 text-grey">New York</p>
+                            </div>
+                        </div>
 
-                    <p class="p3 text-grey">5 year exp</p>
-                    <img src="./assets/images/icons/clock.svg" alt="clock">
-                    <p class="p3 text-grey">150h disponibles</p>
+                        <div class="divider-dotted"></div>
 
-                    <img src="./assets/images/icons/cash.svg" alt="cash">
-                    <p class="p3 text-grey">$30/por hora</p>
+                        <div class="card__content-row f-elements ">
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/increase_level.svg" alt="increase">
+                                <p class="p3 text-grey">5 year exp</p>
+                            </div>
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/clock.svg" alt="clock">
+                                <p class="p3 text-grey">150h</p>
+                            </div>
+                        </div>
 
-                    <img src="./assets/images/icons/user.svg" alt="user">
-                    <p class="p3 text-grey">57 sesiones</p>
+                        <div class="card__content-row f-elements ">
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/cash.svg" alt="cash">
+                                <p class="p3 text-grey">$30/por hora</p>
+                            </div>
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/user.svg" alt="user">
+                                <p class="p3 text-grey">57 sesiones</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- card01 -->
+                <article class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/images/IMG-1.jpg" alt="">
+                    </div>
+
+                    <div class="card__content">
+                        
+                        <div class="card__content-title">
+                            <h5 class="text-primary">Mathew Smith</h5>
+                            <p class="p3 text-alternate">Product Designer & Design research</p>
+                            <div class="f-elements gap-xs">
+                                <img class="card__content-image" src="./assets/images/icons/pin.svg" alt="pin">
+                                <p class="p3 text-grey">New York</p>
+                            </div>
+                        </div>
+
+                        <div class="divider-dotted"></div>
+
+                        <div class="card__content-row f-elements ">
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/increase_level.svg" alt="increase">
+                                <p class="p3 text-grey">5 year exp</p>
+                            </div>
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/clock.svg" alt="clock">
+                                <p class="p3 text-grey">150h</p>
+                            </div>
+                        </div>
+
+                        <div class="card__content-row f-elements ">
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/cash.svg" alt="cash">
+                                <p class="p3 text-grey">$30/por hora</p>
+                            </div>
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/user.svg" alt="user">
+                                <p class="p3 text-grey">57 sesiones</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                 <!-- card01 -->
+                 <article class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/images/IMG-2.jpg" alt="">
+                    </div>
+
+                    <div class="card__content">
+                        
+                        <div class="card__content-title">
+                            <h5 class="text-primary">Mathew Smith</h5>
+                            <p class="p3 text-alternate">Product Designer & Design research</p>
+                            <div class="f-elements gap-xs">
+                                <img class="card__content-image" src="./assets/images/icons/pin.svg" alt="pin">
+                                <p class="p3 text-grey">New York</p>
+                            </div>
+                        </div>
+
+                        <div class="divider-dotted"></div>
+
+                        <div class="card__content-row f-elements ">
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/increase_level.svg" alt="increase">
+                                <p class="p3 text-grey">5 year exp</p>
+                            </div>
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/clock.svg" alt="clock">
+                                <p class="p3 text-grey">150h</p>
+                            </div>
+                        </div>
+
+                        <div class="card__content-row f-elements ">
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/cash.svg" alt="cash">
+                                <p class="p3 text-grey">$30/por hora</p>
+                            </div>
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/user.svg" alt="user">
+                                <p class="p3 text-grey">57 sesiones</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- card01 -->
+                <article class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/images/IMG-3.jpg" alt="">
+                    </div>
+
+                    <div class="card__content">
+                        
+                        <div class="card__content-title">
+                            <h5 class="text-primary">Mathew Smith</h5>
+                            <p class="p3 text-alternate">Product Designer & Design research</p>
+                            <div class="f-elements gap-xs">
+                                <img class="card__content-image" src="./assets/images/icons/pin.svg" alt="pin">
+                                <p class="p3 text-grey">New York</p>
+                            </div>
+                        </div>
+
+                        <div class="divider-dotted"></div>
+
+                        <div class="card__content-row f-elements ">
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/increase_level.svg" alt="increase">
+                                <p class="p3 text-grey">5 year exp</p>
+                            </div>
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/clock.svg" alt="clock">
+                                <p class="p3 text-grey">150h</p>
+                            </div>
+                        </div>
+
+                        <div class="card__content-row f-elements ">
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/cash.svg" alt="cash">
+                                <p class="p3 text-grey">$30/por hora</p>
+                            </div>
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/user.svg" alt="user">
+                                <p class="p3 text-grey">57 sesiones</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- card01 -->
+                <article class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/images/IMG-4.jpg" alt="">
+                    </div>
+
+                    <div class="card__content">
+                        
+                        <div class="card__content-title">
+                            <h5 class="text-primary">Mathew Smith</h5>
+                            <p class="p3 text-alternate">Product Designer & Design research</p>
+                            <div class="f-elements gap-xs">
+                                <img class="card__content-image" src="./assets/images/icons/pin.svg" alt="pin">
+                                <p class="p3 text-grey">New York</p>
+                            </div>
+                        </div>
+
+                        <div class="divider-dotted"></div>
+
+                        <div class="card__content-row f-elements ">
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/increase_level.svg" alt="increase">
+                                <p class="p3 text-grey">5 year exp</p>
+                            </div>
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/clock.svg" alt="clock">
+                                <p class="p3 text-grey">150h</p>
+                            </div>
+                        </div>
+
+                        <div class="card__content-row f-elements ">
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/cash.svg" alt="cash">
+                                <p class="p3 text-grey">$30/por hora</p>
+                            </div>
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/user.svg" alt="user">
+                                <p class="p3 text-grey">57 sesiones</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- card01 -->
+                <article class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/images/IMG-5.jpg" alt="">
+                    </div>
+
+                    <div class="card__content">
+                        
+                        <div class="card__content-title">
+                            <h5 class="text-primary">Mathew Smith</h5>
+                            <p class="p3 text-alternate">Product Designer & Design research</p>
+                            <div class="f-elements gap-xs">
+                                <img class="card__content-image" src="./assets/images/icons/pin.svg" alt="pin">
+                                <p class="p3 text-grey">New York</p>
+                            </div>
+                        </div>
+
+                        <div class="divider-dotted"></div>
+
+                        <div class="card__content-row f-elements ">
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/increase_level.svg" alt="increase">
+                                <p class="p3 text-grey">5 year exp</p>
+                            </div>
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/clock.svg" alt="clock">
+                                <p class="p3 text-grey">150h</p>
+                            </div>
+                        </div>
+
+                        <div class="card__content-row f-elements ">
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/cash.svg" alt="cash">
+                                <p class="p3 text-grey">$30/por hora</p>
+                            </div>
+                            <div class="card__content-column f-elements gap-xs">
+                                <img src="./assets/images/icons/user.svg" alt="user">
+                                <p class="p3 text-grey">57 sesiones</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </article>
             </div>
         </section>
     </main>
     <footer>
-
+        <button class="button button-secondary">Inicia tu suscripcion</button>
+        <button class="button button-primary">Inicia tu suscripcion</button>
     </footer>
 </body>
+
 </html>

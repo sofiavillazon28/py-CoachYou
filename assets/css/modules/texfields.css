@@ -11,6 +11,8 @@ select{
 }
 
 .textfield-icon{
+    max-height: 48px;
+    border-radius: var(--border-radius-medium);
     width: 100%;
     position: relative;
     display: inline;
@@ -29,11 +31,13 @@ select{
 }
 
 .textfield{
+    border-radius: var(--border-radius-medium);
     border: none;
     background-color: transparent;
+    background-color: var(--grey-light-theme-color);
     text-align: left;
     display: inline;
-    height: 56px;
+    width: 95%;
 }
 
 .textfield::placeholder{ 
