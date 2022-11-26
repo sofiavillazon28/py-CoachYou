@@ -29,7 +29,11 @@ select{
     top: 18px;
     width: 20px;
 }
-
+.textfield-simple{
+    padding-left: 16px;
+    width: 100%;
+    
+}
 .textfield{
     border-radius: var(--border-radius-medium);
     border: none;
@@ -38,6 +42,7 @@ select{
     text-align: left;
     display: inline;
     width: 95%;
+    font-family: var(--secondary-font-family);
 }
 
 .textfield::placeholder{ 

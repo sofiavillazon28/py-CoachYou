@@ -14,6 +14,8 @@
 }
 .section-cards{
     background-color: var(--secondary-paper-color);
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .f-elements{
@@ -53,3 +55,11 @@
     }
     
   }
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
