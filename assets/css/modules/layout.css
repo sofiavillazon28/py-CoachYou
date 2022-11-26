@@ -1,0 +1,14 @@
+.section{
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+}
+
+.section-filter{
+    min-height: 130px;
+    box-sizing: border-box;
+    background-color: var(--primary-paper-color);
+}
+
+.f-elements{
+    display: flex;
+}
