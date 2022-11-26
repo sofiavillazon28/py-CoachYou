@@ -6,17 +6,17 @@
     --secondary-theme-color: #FA541C;
     --alternate-theme-color: #2FBCD1;
     
-    --alternate-theme-color: #EEF5FA;
-    --alternate-theme-color: #919EAB;
-    --alternate-theme-color: #637381;
-    --alternate-theme-color: #212B36;
+    --grey-light-theme-color: #EEF5FA;
+    --grey-main-theme-color: #919EAB;
+    --grey-dark-theme-color: #637381;
+    --grey-dark2-theme-color: #212B36;
     
     /* COLOR SHADOW*/
     --primary-shadow-color: rgba(145, 158, 171, 0.10);
     
     /* COLOR PAPER*/
     --primary-paper-color: #FFFFFF;
-    --primary-paper-color: #EEF5FA;
+    --secondary-paper-color: #EEF5FA;
     
     /* TYPOGRPHY COLOR */
     --primary-text-color: #212B36;
@@ -34,6 +34,9 @@
     --padding-section: 1.5rem;
     --padding-container: 1rem;
     --primary-border-radius: 0.5rem;
+
+    --border-radius-medium: 8px;
+    --border-radius-large: 16px
   }
 
   

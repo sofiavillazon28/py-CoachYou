@@ -1,0 +1,11 @@
+@keyframes zoom {
+    from{
+        transform: scale(1);
+        z-index:inherit;
+    }
+    to{
+        transform: scale(1.1);
+        z-index: 5;
+    }
+    
+}

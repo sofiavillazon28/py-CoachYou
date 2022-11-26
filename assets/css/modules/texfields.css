@@ -1,0 +1,47 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    border: none;
+    outline: none;
+}
+
+select{
+    color:var(--grey-dark2-theme-color);
+}
+
+.textfield-icon{
+    max-height: 48px;
+    border-radius: var(--border-radius-medium);
+    width: 100%;
+    position: relative;
+    display: inline;
+    padding-left: 45px;
+    padding-bottom: 16px;
+    padding-top: 15px;
+    background-color: var(--grey-light-theme-color);
+    font-family: var(--secondary-font-family);
+}
+
+.textfield-icon img {
+    position: absolute;
+    left: 20px;
+    top: 18px;
+    width: 20px;
+}
+
+.textfield{
+    border-radius: var(--border-radius-medium);
+    border: none;
+    background-color: transparent;
+    background-color: var(--grey-light-theme-color);
+    text-align: left;
+    display: inline;
+    width: 95%;
+}
+
+.textfield::placeholder{ 
+    color: #919EAB;
+    opacity: 1; 
+}
+
