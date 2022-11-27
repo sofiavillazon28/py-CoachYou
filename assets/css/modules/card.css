@@ -13,27 +13,26 @@
     width: 100%;
 }
 
-.card:hover .card__image img{
-    
-}
-
 .card:hover {
     animation: zoom 0.5s ease-in-out 0s 2 alternate;
-    box-shadow: 0px 0px 8px 0px var(--alternate-theme-color);
+    box-shadow: 0px 8px 24px -4px rgba(145, 158, 171, 0.6);
     cursor: pointer;
 }
+
 
 .card__content-title{
     padding: 16px 24px 0px 24px;
 }
 
 .card__content-row{
-    padding: 0px 24px 16px 24px ;
+    padding-left: 24px ;
     width: 100%;
+    flex-direction: column;
 }
 
 .card__content-column{
-    width: 50%;
+    padding-bottom: 8px ;
+    width: 100%;
 }
 
 .divider-dotted{
@@ -44,4 +43,24 @@
 }
 .card__content-image{
     width: 20px;
+}
+.card__content{
+    padding-bottom: 8px;
+}
+@media (min-width:768px) {
+    .card__content-row{
+        flex-direction: row;
+    }
+    .card__content-column{
+        width: 50%;
+    }
+    .card__content-row {
+        padding: 0px 24px 8px 24px;
+        width: 100%;
+        flex-direction: row;
+    }
+    .card__content{
+        padding-bottom: 8px;
+        width: 100%;
+    }
 }

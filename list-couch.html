@@ -16,10 +16,34 @@
 </head>
 
 <body>
-    <header></header>
+    <header class="header">
+        <nav id="header-nav" class="nav">
+          <div class="container flex justify-between items-center p-relative">
+            <div class="flex gap-xl">
+              <a href="#hero">
+                <img src="./assets/images/logo/logo-1.svg" alt="" class="nav__logo" width="114" height="39" />
+              </a>
+              <ul class="list flex items-center gap-xl">
+                <li>
+                  <a class="list__link p2" href="">Home</a>
+                </li>
+                <li>
+                  <a class="list__link p2" href="">Especialidad</a>
+                </li>
+              </ul>
+            </div>
+            <div class="list flex items-center gap-md">
+              <img src="./assets/images/icons/search.svg" alt="">
+              <span class="divider-line"></span>
+              <a class="list__link p3" href="#">Login</a>
+              <button>join Us</button>
+            </div>
+          </div>
+        </nav>
+      </header>
     <main>
-        <section class="section section-filter ">
-            <form class="container f-elements f-elements--center gap-sm">
+        <section class="section  ">
+            <form class="section-filter container f-elements gap-sm">
 
                 <div class="textfield-icon">
                     <img src="./assets/images/icons/search-1.svg" alt="iconTextfield">
@@ -322,10 +346,51 @@
             </div>
         </section>
     </main>
-    <footer>
-        <button class="button button-secondary">Inicia tu suscripcion</button>
-        <button class="button button-primary">Inicia tu suscripcion</button>
+    <footer class="footer">
+        <div class="footer__logo container f-elements">
+            <img src="./assets/images/logo/logo.svg" alt="">
+        </div>
+        <div class="footer__contact-info container f-elements">
+            
+            <div class="footer__contact-left">
+                
+                <p class="p3 text-grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+                    <br> © helps you build apps faster and better.</p>
+                <ul class="footer__contact-list">
+                    <li><img src="./assets/images/icons/facebbook_outlined.svg" alt=""></li>
+                    <li><img src="./assets/images/icons/instagram_outlined.svg" alt=""></li>
+                    <li><img src="./assets/images/icons/iconbase.svg" alt=""></li>
+                    <li><img src="./assets/images/icons/iconbase-1.svg" alt=""></li>
+                </ul>
+            </div>
+            <div class="footer__contact-addres">
+                <div class="f-elements">
+                    <img src="./assets/images/icons/Message.svg" alt="">
+                    <p class="p3 text-primary"> info@couchyou.com</p>
+                </div>
+                <div class="f-elements">
+                    <img src="./assets/images/icons/map_marker.svg" alt="">
+                    <p class="p3 text-primary"> 655 Schaefer Dale</p>
+                </div>
+            </div>
+            <div class="footer__contact-input f-elements gap-xs">
+                <input class="textfield textfield-simple" type="text" name="" placeholder="Ingresa tu correo" id="">
+                <button class="button square-button-small"><img src="./assets/images/icons/arrow_ios_forward_outline.svg" alt="icon arrow right"></button>
+            </div>
+        </div>
+        <div class="footer__contact-rights container f-elements align-center space-between">
+            <div>
+                <p class="p2 text-grey">© 2022 All rights reserved</p>
+            </div>
+            <div class="">
+                <ul class="footer__contact-links">
+                    <li><a href="http://"><p class="p3 text-grey">Help Center</p></a></li>
+                    <li><a href="http://"><p class="p3 text-grey">Terms and conditions</p></a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
+   
 </body>
 
 </html>

@@ -15,6 +15,24 @@
     width: 56px;
 }
 
+.square-button img{
+    height: 20px;
+    width: 20px;
+}
+
+
+.square-button-small{
+    padding: 15px;  
+    height: 48px;
+    width: 48px;
+}
+
+.square-button-small img{
+    height: 18px;
+    width: 18px;
+}
+
+
 .button-secondary{
     background-color: var(--secondary-theme-color);
     color: var(--white-text-color);
