@@ -1,4 +1,4 @@
-![gg](https://ibb.co/rt2tqH7)
+![gg](https://i.ibb.co/MhkhK72/Frame-2.png)
 
 # Project - CouchYou
 
