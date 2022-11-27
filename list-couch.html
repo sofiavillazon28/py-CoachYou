@@ -16,10 +16,34 @@
 </head>
 
 <body>
-    <header></header>
+    <header class="header">
+        <nav id="header-nav" class="nav">
+          <div class="container flex justify-between items-center p-relative">
+            <div class="flex gap-xl">
+              <a href="#hero">
+                <img src="./assets/images/logo/logo-1.svg" alt="" class="nav__logo" width="114" height="39" />
+              </a>
+              <ul class="list flex items-center gap-xl">
+                <li>
+                  <a class="list__link p2" href="">Home</a>
+                </li>
+                <li>
+                  <a class="list__link p2" href="">Especialidad</a>
+                </li>
+              </ul>
+            </div>
+            <div class="list flex items-center gap-md">
+              <img src="./assets/images/icons/search.svg" alt="">
+              <span class="divider-line"></span>
+              <a class="list__link p3" href="#">Login</a>
+              <button>join Us</button>
+            </div>
+          </div>
+        </nav>
+      </header>
     <main>
-        <section class="section section-filter ">
-            <form class="container f-elements f-elements--center gap-sm">
+        <section class="section  ">
+            <form class="section-filter container f-elements gap-sm">
 
                 <div class="textfield-icon">
                     <img src="./assets/images/icons/search-1.svg" alt="iconTextfield">

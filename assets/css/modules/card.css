@@ -61,5 +61,6 @@
     }
     .card__content{
         padding-bottom: 8px;
+        width: 100%;
     }
 }

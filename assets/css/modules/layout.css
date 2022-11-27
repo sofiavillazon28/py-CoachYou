@@ -8,9 +8,12 @@
 }
 
 .section-filter{
-    max-height: 130px;
+    max-height: 100%;
     box-sizing: border-box;
     background-color: var(--primary-paper-color);
+    flex-direction: column;
+    padding: 24px;
+    align-items:flex-end
 }
 .section-cards{
     background-color: var(--secondary-paper-color);
@@ -60,6 +63,12 @@
         background-color: var(--secondary-paper-color);
         padding-top: 80px;
         padding-bottom: 80px;
+    }
+    .section-filter{
+        max-height: 130px;
+        box-sizing: border-box;
+        background-color: var(--primary-paper-color);
+        flex-direction: row;
     }
 }
 
