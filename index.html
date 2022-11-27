@@ -1,27 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CouchYou</title>
-    <link rel="stylesheet" href="./assets/css/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CouchYou</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body">
 
-    <h1 class="text-grey">H1 - Texto prueba</h1>
-    <h2 class="text-grey">H2 - Texto prueba</h2>
-    <h3 class="text-grey">H3 - Texto prueba</h3>
-    <h4 class="text-grey">H4 - Texto prueba</h4>
-    <h5 class="text-grey">H5 - Texto prueba</h5>
-    <p class="p1 text-grey">P1- Texto prueba</p>
-    <p class="p2 text-grey">P2- Texto prueba</p>
-    <p class="p3 text-grey">P3- Texto prueba</p>
-    <p class="caption text-grey">caption - Texto prueba</p>
-    
+  <header class="header position-sticky md:position-fixed">
+    <nav id="header-nav" class="nav">
+      <div class="container px-15 flex justify-between items-center p-relative md:px-0">
+        <div class="flex  gap-xl">
+          <a href="#hero">
+            <img src="./assets/images/logo/logo-1.svg" alt="" class="nav__logo" width="114" height="39" />
+          </a>
+          <ul class="list flex items-center gap-xl hidden md:flex">
+            <li>
+              <a class="list__link p2" href="">Home</a>
+            </li>
+            <li>
+              <a class="list__link p2" href="">Especialidad</a>
+            </li>
+          </ul>
+        </div>
+        <div class="list flex items-center gap-md">
+          <img class="hidden md:flex" src="./assets/images/icons/search.svg" alt="">
+          <span class="divider-line h-full"></span>
+          <a class="list__link p3" href="#">Login</a>
+          <button class="button-white">Join Us</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <article class="hero flex items-center">
+      <div class="container px-15 flex flex-column w-full md:flex-row  md:px-0">
+        <div class="flex flex-column justify-center md:w-566 mt-120">
+          <h1 class="text-white m-0 p-0 mb-24">
+            Crece y aprende<br />con nuestros <span class="text-secondary">couch</span>
+          </h1>
+          <p class="p1 text-grey">Reserva tus sesiones de mentoría uno a uno.</p>
+          <form class="search flex flex-column items-center width-fit-content md:flex-row">
+            <div class="search-field flex items-center gap-sm w-176">
+              <img src="./assets/images/icons/search-1.svg" alt="¿Qué couch buscas?" width="20" height="20">
+              <input class="search-input p2 appearance-none" type="text" placeholder="¿Qué couch buscas?">
+            </div>
+            <span class="divider-line hidden md:block"></span>
+            <div class="search-field flex items-center gap-sm w-134 ">
+              <img src="./assets/images/icons/pin-1.svg" alt="País" width="20" height="20">
+              <select class="search-input p2 appearance-none" placeholder="País">
+                <option value="" disabled selected>País</option></option>
+                <option value="peru">Perú</option>
+                <option value="colombia">Colombia</option>
+                <option value="mexico">México</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="venezuela">Venezuela</option>
+              </select>
+            </div>
+            <span class="divider-line hidden md:block"></span>
+            <div class="search-field flex items-center gap-sm w-138">
+              <img src="./assets/images/icons/inventory_management.svg" alt="Expecialidad" width="20" height="20">
+              <select class="search-input p2 appearance-none" placeholder="Especialidad">
+                <option value="" disabled selected>Especialidad</option>
+                <option value="peru">Desarrollo de software</option>
+                <option value="mexico">Design</option>
+                <option value="colombia">Ciencia de datos</option>
+              </select>
+            </div>
+            <button class="button square-button">
+              <img src="./assets/images/icons/search.svg" alt="">
+            </button>
+          </form>
+          <div class="stats flex flex-row gap-md items-center flex-wrap md:flex-row">
+            <div class="flex flex-column">
+              <h3 class="text-white">2m+</h3>
+              <p class="p2 text-grey">Couches</p>
+            </div>
+            <span class="divider-line h-full hidden md:block"></span>
+            <div class="flex flex-column">
+              <h3 class="text-white">500K+</h3>
+              <p class="p2 text-grey">Sesiones dictadas</p>
+            </div>
+            <span class="divider-line h-full hidden md:block"></span>
+            <div class="flex flex-column">
+              <h3 class="text-white">250k+</h3>
+              <p class="p2 text-grey">Partners</p>
+            </div>
+            <span class="divider-line h-full hidden md:block"></span>
+            <div class="flex flex-column">
+              <h3 class="text-white">1,56k +</h3>
+              <p class="p2 text-grey">Alumnos</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex w-full justify-end">
+          <img class="w-max md:w-max" src="./assets/images/images/imgHero.svg" width="485" height="582" alt="">
+        </div>
+      </div>
+    </article>
+
+    <article class="learnbox">
+      <div class="container px-15 flex flex-column items-center md:px-0">
+        <p class="learnbox-subtitle caption text-grey">Para estudiantes</p>
+        <h2 class="learnbox-title text-primary">Crece en tu carrera aprendiendo de los mejores</h2>
+        <p class="learnbox-text p1 text-primary">Crece en tu carrera aprendiendo de los mejores</p>
+
+        <section class="learnbox-steps flex flex-column items-center justify-evenly w-full md:flex-row">
+          <article class="flex flex-column items-center justify-center">
+            <img class="stepbox-icon" src="./assets/images/images/signup_job.svg" alt="Step 1: Signup Job" width="80" height="72">
+            <p class="stepbox-subtitle caption text-grey">STEP 1</p>
+            <h4 class="stepbox-title text-primary">Ingresa</h4>
+            <p class="stepbox-text p3 text-primary text-center">Nunc nonummy metus.<br />Donec elit libero</p>
+          </article>
+          <article class="stepbox flex flex-column items-center justify-center">
+            <img class="stepbox-icon" src="./assets/images/images/search_job.svg" alt="Step 2: Search Job" width="80" height="72">
+            <p class="stepbox-subtitle caption text-grey">STEP 2</p>
+            <h4 class="stepbox-title text-primary">Busca tu Couch</h4>
+            <p class="stepbox-text p3 text-primary text-center">Nunc nonummy metus.<br />Donec elit libero</p>
+          </article>
+          <article class="flex flex-column items-center justify-center">
+            <img class="stepbox-icon" src="./assets/images/images/resume_job.svg" alt="Step 3: Resume Job" width="80" height="72">
+            <p class="stepbox-subtitle caption text-grey">STEP 3</p>
+            <h4 class="stepbox-title text-primary">¡Solicita un cita!</h4>
+            <p class="stepbox-text p3 text-primary text-center">Nunc nonummy metus.<br />Donec elit libero</p>
+          </article>
+        </section>
+
+        <a class="button text-white" href="./list-couch.html">Inicia tu búsqueda</a>
+      </div>
+    </article>
+
+    <article class="couchexbox">
+      <div class="container px-15 flex flex-column items-center md:px-0">
+        <p class="couchexbox-subtitle caption text-grey">Couches</p>
+        <h2 class="couchexbox-title text-primary">Tenemos Couches en todo el mundo</h2>
+        <section class="section section-cards">
+          <div class="container g-elements gap-md">
+              <!-- card01 -->
+              <article class="card">
+                  <div class="card__image">
+                      <img src="./assets/images/images/IMG.jpg" alt="">
+                  </div>
+
+                  <div class="card__content">
+                      
+                      <div class="card__content-title">
+                          <h5 class="text-primary">Mathew Smith</h5>
+                          <p class="p3 text-alternate">Product Designer & Design research</p>
+                          <div class="f-elements gap-xs">
+                              <img class="card__content-image" src="./assets/images/icons/pin.svg" alt="pin">
+                              <p class="p3 text-grey">New York</p>
+                          </div>
+                      </div>
+
+                      <div class="divider-dotted"></div>
+
+                      <div class="card__content-row f-elements ">
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/increase_level.svg" alt="increase">
+                              <p class="p3 text-grey">5 year exp</p>
+                          </div>
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/clock.svg" alt="clock">
+                              <p class="p3 text-grey">150h</p>
+                          </div>
+                      </div>
+
+                      <div class="card__content-row f-elements ">
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/cash.svg" alt="cash">
+                              <p class="p3 text-grey">$30/por hora</p>
+                          </div>
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/user.svg" alt="user">
+                              <p class="p3 text-grey">57 sesiones</p>
+                          </div>
+                      </div>
+                  </div>
+
+              </article>
+
+              <!-- card01 -->
+              <article class="card">
+                  <div class="card__image">
+                      <img src="./assets/images/images/IMG-1.jpg" alt="">
+                  </div>
+
+                  <div class="card__content">
+                      
+                      <div class="card__content-title">
+                          <h5 class="text-primary">Mathew Smith</h5>
+                          <p class="p3 text-alternate">Product Designer & Design research</p>
+                          <div class="f-elements gap-xs">
+                              <img class="card__content-image" src="./assets/images/icons/pin.svg" alt="pin">
+                              <p class="p3 text-grey">New York</p>
+                          </div>
+                      </div>
+
+                      <div class="divider-dotted"></div>
+
+                      <div class="card__content-row f-elements ">
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/increase_level.svg" alt="increase">
+                              <p class="p3 text-grey">5 year exp</p>
+                          </div>
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/clock.svg" alt="clock">
+                              <p class="p3 text-grey">150h</p>
+                          </div>
+                      </div>
+
+                      <div class="card__content-row f-elements ">
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/cash.svg" alt="cash">
+                              <p class="p3 text-grey">$30/por hora</p>
+                          </div>
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/user.svg" alt="user">
+                              <p class="p3 text-grey">57 sesiones</p>
+                          </div>
+                      </div>
+                  </div>
+
+              </article>
+
+                <!-- card01 -->
+                <article class="card">
+                  <div class="card__image">
+                      <img src="./assets/images/images/IMG-2.jpg" alt="">
+                  </div>
+
+                  <div class="card__content">
+                      
+                      <div class="card__content-title">
+                          <h5 class="text-primary">Mathew Smith</h5>
+                          <p class="p3 text-alternate">Product Designer & Design research</p>
+                          <div class="f-elements gap-xs">
+                              <img class="card__content-image" src="./assets/images/icons/pin.svg" alt="pin">
+                              <p class="p3 text-grey">New York</p>
+                          </div>
+                      </div>
+
+                      <div class="divider-dotted"></div>
+
+                      <div class="card__content-row f-elements ">
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/increase_level.svg" alt="increase">
+                              <p class="p3 text-grey">5 year exp</p>
+                          </div>
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/clock.svg" alt="clock">
+                              <p class="p3 text-grey">150h</p>
+                          </div>
+                      </div>
+
+                      <div class="card__content-row f-elements ">
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/cash.svg" alt="cash">
+                              <p class="p3 text-grey">$30/por hora</p>
+                          </div>
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/user.svg" alt="user">
+                              <p class="p3 text-grey">57 sesiones</p>
+                          </div>
+                      </div>
+                  </div>
+
+              </article>
+
+              <!-- card01 -->
+              <article class="card">
+                  <div class="card__image">
+                      <img src="./assets/images/images/IMG-3.jpg" alt="">
+                  </div>
+
+                  <div class="card__content">
+                      
+                      <div class="card__content-title">
+                          <h5 class="text-primary">Mathew Smith</h5>
+                          <p class="p3 text-alternate">Product Designer & Design research</p>
+                          <div class="f-elements gap-xs">
+                              <img class="card__content-image" src="./assets/images/icons/pin.svg" alt="pin">
+                              <p class="p3 text-grey">New York</p>
+                          </div>
+                      </div>
+
+                      <div class="divider-dotted"></div>
+
+                      <div class="card__content-row f-elements ">
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/increase_level.svg" alt="increase">
+                              <p class="p3 text-grey">5 year exp</p>
+                          </div>
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/clock.svg" alt="clock">
+                              <p class="p3 text-grey">150h</p>
+                          </div>
+                      </div>
+
+                      <div class="card__content-row f-elements ">
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/cash.svg" alt="cash">
+                              <p class="p3 text-grey">$30/por hora</p>
+                          </div>
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/user.svg" alt="user">
+                              <p class="p3 text-grey">57 sesiones</p>
+                          </div>
+                      </div>
+                  </div>
+
+              </article>
+
+              <!-- card01 -->
+              <article class="card">
+                  <div class="card__image">
+                      <img src="./assets/images/images/IMG-4.jpg" alt="">
+                  </div>
+
+                  <div class="card__content">
+                      
+                      <div class="card__content-title">
+                          <h5 class="text-primary">Mathew Smith</h5>
+                          <p class="p3 text-alternate">Product Designer & Design research</p>
+                          <div class="f-elements gap-xs">
+                              <img class="card__content-image" src="./assets/images/icons/pin.svg" alt="pin">
+                              <p class="p3 text-grey">New York</p>
+                          </div>
+                      </div>
+
+                      <div class="divider-dotted"></div>
+
+                      <div class="card__content-row f-elements ">
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/increase_level.svg" alt="increase">
+                              <p class="p3 text-grey">5 year exp</p>
+                          </div>
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/clock.svg" alt="clock">
+                              <p class="p3 text-grey">150h</p>
+                          </div>
+                      </div>
+
+                      <div class="card__content-row f-elements ">
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/cash.svg" alt="cash">
+                              <p class="p3 text-grey">$30/por hora</p>
+                          </div>
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/user.svg" alt="user">
+                              <p class="p3 text-grey">57 sesiones</p>
+                          </div>
+                      </div>
+                  </div>
+
+              </article>
+
+              <!-- card01 -->
+              <article class="card">
+                  <div class="card__image">
+                      <img src="./assets/images/images/IMG-5.jpg" alt="">
+                  </div>
+
+                  <div class="card__content">
+                      
+                      <div class="card__content-title">
+                          <h5 class="text-primary">Mathew Smith</h5>
+                          <p class="p3 text-alternate">Product Designer & Design research</p>
+                          <div class="f-elements gap-xs">
+                              <img class="card__content-image" src="./assets/images/icons/pin.svg" alt="pin">
+                              <p class="p3 text-grey">New York</p>
+                          </div>
+                      </div>
+
+                      <div class="divider-dotted"></div>
+
+                      <div class="card__content-row f-elements ">
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/increase_level.svg" alt="increase">
+                              <p class="p3 text-grey">5 year exp</p>
+                          </div>
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/clock.svg" alt="clock">
+                              <p class="p3 text-grey">150h</p>
+                          </div>
+                      </div>
+
+                      <div class="card__content-row f-elements ">
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/cash.svg" alt="cash">
+                              <p class="p3 text-grey">$30/por hora</p>
+                          </div>
+                          <div class="card__content-column f-elements gap-xs">
+                              <img src="./assets/images/icons/user.svg" alt="user">
+                              <p class="p3 text-grey">57 sesiones</p>
+                          </div>
+                      </div>
+                  </div>
+
+              </article>
+          </div>
+        </section>
+        <a class="button button-primary flex justify-between gap-sm"  href="./list-couch.html">
+          Ver todos los Couch
+          <img src="./assets/images/icons/direction_straight_right.svg" alt="">
+        </a>
+      </div>
+    </article>
+
+    <article class="subscribebox">
+      <div class="container px-15 flex flex-column items-center md:px-0">
+        <h2 class="subscribebox-subtitle text-white">Suscríbete a nuestras novedades</h2>
+        <p class="subscribebox-title p1 text-white">Suscríbete para recibir actualizaciones sobre los sofás más recientes y relevantes.</p>
+        <form class="subscribebox-form flex">
+          <input class="" type="text" placeholder="Ingresa tu email">
+          <button class="button button-secondary">Suscribirme</button>
+        </form>
+      </div>
+    </article>
+
+    <footer class="footer">
+      <div class="footer__logo container f-elements">
+          <img src="./assets/images/logo/logo.svg" alt="">
+      </div>
+      <div class="footer__contact-info container f-elements">
+          
+          <div class="footer__contact-left">
+              
+              <p class="p3 text-grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+                  <br> © helps you build apps faster and better.</p>
+              <ul class="footer__contact-list">
+                  <li><img src="./assets/images/icons/facebbook_outlined.svg" alt=""></li>
+                  <li><img src="./assets/images/icons/instagram_outlined.svg" alt=""></li>
+                  <li><img src="./assets/images/icons/iconbase.svg" alt=""></li>
+                  <li><img src="./assets/images/icons/iconbase-1.svg" alt=""></li>
+              </ul>
+          </div>
+          <div class="footer__contact-addres">
+              <div class="f-elements">
+                  <img src="./assets/images/icons/Message.svg" alt="">
+                  <p class="p3 text-primary"> info@couchyou.com</p>
+              </div>
+              <div class="f-elements">
+                  <img src="./assets/images/icons/map_marker.svg" alt="">
+                  <p class="p3 text-primary"> 655 Schaefer Dale</p>
+              </div>
+          </div>
+          <div class="footer__contact-input f-elements gap-xs">
+              <input class="textfield textfield-simple" type="text" name="" placeholder="Ingresa tu correo" id="">
+              <button class="button square-button-small"><img src="./assets/images/icons/arrow_ios_forward_outline.svg" alt="icon arrow right"></button>
+          </div>
+      </div>
+      <div class="footer__contact-rights container f-elements align-center space-between">
+          <div>
+              <p class="p2 text-grey">© 2022 All rights reserved</p>
+          </div>
+          <div class="">
+              <ul class="footer__contact-links">
+                  <li><a href="http://"><p class="p3 text-grey">Help Center</p></a></li>
+                  <li><a href="http://"><p class="p3 text-grey">Terms and conditions</p></a></li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+  </main>
+
 </body>
 </html>
