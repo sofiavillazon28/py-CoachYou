@@ -1,11 +1,57 @@
 @keyframes zoom {
     from{
         transform: scale(1);
-        z-index:inherit;
     }
     to{
         transform: scale(1.05);
-        z-index: 5;
+    }
+    
+}
+@keyframes particle {
+    0%   {
+        top: -20vh;
+        right: -20vh;
+    }
+    10%  {
+        top: 10vh;
+        right: 100vh;
+    }
+    20%  {
+        top:-20vh;
+        right:80vh;
+    }
+    30% {
+        top:800vh;
+        right:8vh;
+    }
+    40% {
+        top:-20vh;
+        right:-20vh;
+    }
+    50% {
+        top:10vh;
+        right:0vh;
+    }
+    60% {
+        top:-20vh;
+        right:-20vh;
+    }
+    70% {
+        top:10vh;
+        right:0vh;
+    }
+
+    80% {
+        top:0vh;
+        right:80vh;
+    }
+    90% {
+        top:100vh;
+        right:80vh;
+    }
+    100% {
+        top:100vh;
+        right:80vh;
     }
     
 }

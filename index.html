@@ -17,15 +17,15 @@
     <nav id="header-nav" class="nav">
       <div class="container px-15 flex justify-between items-center p-relative md:px-0">
         <div class="flex  gap-xl">
-          <a href="#hero">
+          <a href="index.html">
             <img src="./assets/images/logo/logo-1.svg" alt="" class="nav__logo" width="114" height="39" />
           </a>
           <ul class="list flex items-center gap-xl hidden md:flex">
             <li>
-              <a class="list__link p2" href="">Home</a>
+              <a class="list__link p2" href="#">Home</a>
             </li>
             <li>
-              <a class="list__link p2" href="">Especialidad</a>
+              <a class="list__link p2" href="#couchList">Couches</a>
             </li>
           </ul>
         </div>
@@ -37,17 +37,19 @@
         </div>
       </div>
     </nav>
+    
   </header>
 
   <main class="main">
     <article class="hero flex items-center">
+      <div class="circle-animation"></div>
       <div class="container px-15 flex flex-column w-full md:flex-row  md:px-0">
         <div class="flex flex-column justify-center md:w-566 mt-120">
           <h1 class="text-white m-0 p-0 mb-24">
             Crece y aprende<br />con nuestros <span class="text-secondary">couch</span>
           </h1>
           <p class="p1 text-grey">Reserva tus sesiones de mentoría uno a uno.</p>
-          <form class="search flex flex-column items-center width-fit-content md:flex-row">
+          <form class="search flex flex-column items-center  md:flex-row resp-flex">
             <div class="search-field flex items-center gap-sm w-176">
               <img src="./assets/images/icons/search-1.svg" alt="¿Qué couch buscas?" width="20" height="20">
               <input class="search-input p2 appearance-none" type="text" placeholder="¿Qué couch buscas?">
@@ -69,7 +71,7 @@
               <img src="./assets/images/icons/inventory_management.svg" alt="Expecialidad" width="20" height="20">
               <select class="search-input p2 appearance-none" placeholder="Especialidad">
                 <option value="" disabled selected>Especialidad</option>
-                <option value="peru">Desarrollo de software</option>
+                <option value="peru">Desarrollo</option>
                 <option value="mexico">Design</option>
                 <option value="colombia">Ciencia de datos</option>
               </select>
@@ -104,6 +106,7 @@
           <img class="w-max md:w-max" src="./assets/images/images/imgHero.svg" width="485" height="582" alt="">
         </div>
       </div>
+      
     </article>
 
     <article class="learnbox">
@@ -137,7 +140,7 @@
       </div>
     </article>
 
-    <article class="couchexbox">
+    <article id="couchList" class="couchexbox">
       <div class="container px-15 flex flex-column items-center md:px-0">
         <p class="couchexbox-subtitle caption text-grey">Couches</p>
         <h2 class="couchexbox-title text-primary">Tenemos Couches en todo el mundo</h2>

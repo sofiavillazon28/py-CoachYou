@@ -7,10 +7,7 @@
 .list__link {
   color: var(--white-text-color);
   text-decoration: none;
-}
-
-.list__link {
-  
+  scroll-behavior: smooth;
 }
 
 .list__link--active {
