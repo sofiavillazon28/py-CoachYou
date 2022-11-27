@@ -43,9 +43,7 @@
   margin-bottom: 32px;
 }
 
-.couchexbox-title {
-  margin-bottom: 80px;
-}
+.couchexbox-title {}
 
 .couchexbox-joblist {
   width: 100%;

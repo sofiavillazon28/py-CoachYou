@@ -16,14 +16,14 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header position-sticky md:position-fixed">
         <nav id="header-nav" class="nav">
-          <div class="container flex justify-between items-center p-relative">
-            <div class="flex gap-xl">
+          <div class="container px-15 flex justify-between items-center p-relative md:px-0">
+            <div class="flex  gap-xl">
               <a href="#hero">
                 <img src="./assets/images/logo/logo-1.svg" alt="" class="nav__logo" width="114" height="39" />
               </a>
-              <ul class="list flex items-center gap-xl">
+              <ul class="list flex items-center gap-xl hidden md:flex">
                 <li>
                   <a class="list__link p2" href="">Home</a>
                 </li>
@@ -33,10 +33,10 @@
               </ul>
             </div>
             <div class="list flex items-center gap-md">
-              <img src="./assets/images/icons/search.svg" alt="">
-              <span class="divider-line"></span>
+              <img class="hidden md:flex" src="./assets/images/icons/search.svg" alt="">
+              <span class="divider-line h-full"></span>
               <a class="list__link p3" href="#">Login</a>
-              <button>join Us</button>
+              <button class="button-white">Join Us</button>
             </div>
           </div>
         </nav>
