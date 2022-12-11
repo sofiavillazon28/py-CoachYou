@@ -9,13 +9,13 @@
 @import "./modules/layout";
 @import "./modules/list";
 @import "./modules/nav";
+@import "./modules/utils";
 
 @import "./modules/search";
 @import "./modules/sections";
 @import "./modules/stats";
 @import "./modules/texfields";
 @import "./modules/typography";
-@import "./modules/utils";
 
 .body {
 	color: var(--primary-text-color);
